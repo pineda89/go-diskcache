@@ -22,8 +22,8 @@ func DefaultOptions() *Options {
 		WithEvictionPolicy(EvictionpolicyRemoveOldestFirst).
 		WithMaxUsagePercent(90).
 		WithMinFreeSpace(0).
-		WithCheckOrphansPeriod(1 * time.Second).
-		WithCheckEvictionsPeriod(1 * time.Second).
+		WithCheckOrphansPeriod(1 * time.Minute).
+		WithCheckEvictionsPeriod(1 * time.Minute).
 		WithCheckTTLPeriod(1 * time.Second)
 }
 

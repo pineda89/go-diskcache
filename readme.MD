@@ -44,6 +44,6 @@ func main() {
 | WithMaxUsagePercent      | 90                | maximum usage percentage. If it is left at 0 it is not used                                         |
 | WithMinFreeSpace         | 0                 | minimum number of bytes that must be free. By default it is not used                                |
 | WithEvictionPolicy       | RemoveOldestFirst | delete criterion in case of reaching the disk limit                                                 |
-| WithCheckOrphansPeriod   | 1 second          | how often it checks for orphaned files. An orphaned file is a file that is not covered by the cache |
-| WithCheckEvictionsPeriod | 1 second          | how often it checks if we have exceeded the disk limits                                             |
+| WithCheckOrphansPeriod   | 1 minute          | how often it checks for orphaned files. An orphaned file is a file that is not covered by the cache |
+| WithCheckEvictionsPeriod | 1 minute          | how often it checks if we have exceeded the disk limits                                             |
 | WithCheckTTLPeriod       | 1 second          | how often it is checked if the keys exceeded the TTL                                                |
